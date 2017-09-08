@@ -1,11 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Root } from './config/router';
+import DrawerExample from './screens/Drawer';
 
 export default class App extends React.Component {
   render() {
     return (
-      return <Root />;
+        <DrawerExample />
     );
   }
 }
@@ -18,3 +19,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+
