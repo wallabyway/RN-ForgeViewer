@@ -5,7 +5,7 @@ import forge from './screens/forgeviewer';
 
 
 const DrawItem = function(item) {
-  return <Text>{item.id}{item.layer}</Text>
+  return <Text>{item.key}{item.layer}</Text>
   };
 
 const DrawMenu = (props) => (
@@ -14,9 +14,9 @@ const DrawMenu = (props) => (
 
         <FlatList
           data={[
-            {id: 'Issue:#1311', layer:'DIM'}, 
-            {id: 'Issue:#1313', layer:'LOGO'}, 
-            {id: 'Issue:#1314', layer:'CPG-E-CRITICAL'}, 
+            {key: 'Issue:#1311', layer:'DIM'}, 
+            {key: 'Issue:#1313', layer:'LOGO'}, 
+            {key: 'Issue:#1314', layer:'CPG-E-CRITICAL'}, 
           ]}
           renderItem={({item}) =>  DrawItem(item)
         }
